@@ -4,6 +4,6 @@
              xmlns:monaco="clr-namespace:Monaco;assembly=Monaco"
              x:Class="MonacoTestApp.MainPage">
 
-    <monaco:MonacoEditor Background="Red" />
+    <monaco:MonacoEditor />
     
 </ContentPage>
