@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Monaco;
 
 namespace MonacoTestApp;
 
@@ -9,6 +10,10 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
+
+            // initializes the Monaco Editor for .NET MAUI
+            .UseMauiMonacoEditor()
+
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
